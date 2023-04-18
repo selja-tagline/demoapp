@@ -1,19 +1,24 @@
 
 <p style="color: green"><%= notice %></p>
-<h1>All Events</h1>
-<div id="events"> 
-<table style="border: 1px solid black;">
-<thead>
-    <tr style="border: 1px solid black;">
-        <th style="border: 1px solid black;">Name</th>
-        <th style="border: 1px solid black;">Location</th>
-        <th style="border: 1px solid black;">Date</th>
-        <th style="border: 1px solid black;">Action</th>
-        <th style="border: 1px solid black;">Action</th>
-        <th style="border: 1px solid black;">Action</th>
-    <tr>
-</thead>
+
+<div id="events"  class="container mt-3"> 
+<h2>All Events</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Action</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody> 
     <%= render @events %>
-    <%= link_to 'Create New Event', new_event_path %>
+    </tbody> 
+    <%= link_to 'Create New Event', new_event_path, class: "link-info" %>
+    </table>
 </div>
-</table>
+
+
