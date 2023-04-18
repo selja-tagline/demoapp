@@ -1,0 +1,19 @@
+
+<p style="color: green"><%= notice %></p>
+<h1>All Events</h1>
+<div id="events"> 
+<table style="border: 1px solid black;">
+<thead>
+    <tr style="border: 1px solid black;">
+        <th style="border: 1px solid black;">Name</th>
+        <th style="border: 1px solid black;">Location</th>
+        <th style="border: 1px solid black;">Date</th>
+        <th style="border: 1px solid black;">Action</th>
+        <th style="border: 1px solid black;">Action</th>
+        <th style="border: 1px solid black;">Action</th>
+    <tr>
+</thead>
+    <%= render @events %>
+    <%= link_to 'Create New Event', new_event_path %>
+</div>
+</table>

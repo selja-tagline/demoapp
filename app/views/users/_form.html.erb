@@ -1,0 +1,7 @@
+  <%= form_with model: @user, data: { turbo: false } do |form| %>
+    <%= form.label :title, "Post Title"%>
+    <%= form.text_field :title, style: "display: block"%>
+    <%= form.label :description, "Post Detail" %>
+    <%= form.text_area :description, size: "50x5", style: "display: block; margin-bottom: 20px;" %>
+    <%= form.submit %>
+  <% end %>    
