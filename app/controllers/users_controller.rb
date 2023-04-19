@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     # @static_data = "This is Test"
 
     p ":::::: Users List ::::::"
-    @users = User.all
+    # @users = User.all
   end
 
   def show

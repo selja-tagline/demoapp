@@ -1,10 +1,12 @@
 class EventsController < ApplicationController
 
+  include Pagy::Frontend
   before_action :set_event, only: %i[ show edit update destroy ]
 
   def index
     puts "::::::: Call Index Action ::::::::"
-    @events = Event.all
+    # @events = Event.all
+    @pagy, @events = pagy((Event.all), items: 5)
   end
 
   def show

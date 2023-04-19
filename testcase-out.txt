@@ -1,0 +1,14 @@
+appointments          courses_students      schema_migrations   
+ar_internal_metadata  events                students            
+articles              patients              table_people        
+authors               people                table_topics        
+blogs                 physicians            topics              
+books                 posts                 users               
+courses               products            
+appointments          courses_students      schema_migrations   
+ar_internal_metadata  events                students            
+articles              patients              table_people        
+authors               people                table_topics        
+blogs                 physicians            topics              
+books                 posts                 users               
+courses               products            

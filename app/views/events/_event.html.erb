@@ -1,13 +1,11 @@
 
-<div id="<%= dom_id event %>">    
-    
-        <tr>
-            <td><%= event.name %></td>
-            <td><%= event.location %></td>
-            <td><%= event.Date %></td>
-            <td><%= link_to "Show", event, class: "link-info" %></td>
-            <td><%= link_to "Edit", edit_event_path(event), class: "link-success" %></td>
-            <td><%= link_to "Destroy",event, :method => :delete, class: "link-danger" %></td>
-        </tr>
-          
+<div id="<%= dom_id event %>">        
+    <tr>
+        <td><%= event.name %></td>
+        <td><%= event.location %></td>
+        <td><%= event.Date %></td>
+        <td><%= link_to "Show", event, class: "link-info" %></td>
+        <td><%= link_to "Edit", edit_event_path(event), class: "link-success" %></td>
+        <td><%= link_to "Destroy",event, :method => :delete, class: "link-danger" %></td>
+    </tr>          
 </div>
