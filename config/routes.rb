@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :users do
       # get 'preview', on: :member
       get 'preview', on: :new 
+      resources :events
   end
 
   resources :users do

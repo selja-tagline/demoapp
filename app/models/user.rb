@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :trackable
     has_many :articles, dependent: :destroy
+    has_many :events, dependent: :destroy
 
     validates :name, :surname, presence: true
     after_create :display_messages
